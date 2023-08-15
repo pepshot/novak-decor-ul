@@ -1,0 +1,11 @@
+img {
+    vertical-align: middle;
+}
+
+.wrapper1 {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #333;
+}
