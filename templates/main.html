@@ -2,16 +2,12 @@
 
 {% block content %}
 
-    <div class="album py-5 bg-body-tertiary">
-
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 g-3">
                 <div class="card shadow-sm">
                     <p class="shadowsmall" style="text-align: center;">
-                        <span style="color: rgb(255, 91, 29);">
-                            <span style="font-size: 45px;">
+                        <span class="orange_heading">
                                 Производим <strong>Гибкий камень</strong> по <strong>гибким ценам</strong>.
-                            </span>
                         </span>
                     </p>
                 </div>
@@ -21,14 +17,13 @@
         <br>
         <br>
 
+
         <div class="block">
 
             <div class="headings">
-                <h2 class="shadowsmall" style="text-align: center;">
-                    <span style="color: rgb(255, 91, 29);">
-                        <span style="font-size: 40px;">
+                <h2 class="shadowsmall">
+                    <span class="orange_heading">
                             <strong>Гибкий камень</strong>
-                        </span>
                     </span>
                 </h2>
             </div>
@@ -125,13 +120,12 @@
         <br>
         <br>
 
+
         <div class="block">
             <div class="headings">
-                <h2 class="shadowsmall" style="text-align: center;">
-                    <span style="color: rgb(255, 91, 29);">
-                        <span style="font-size: 40px;">
+                <h2 class="shadowsmall">
+                    <span class="orange_heading">
                             <strong>Свойства и преимущества Гибкого камня</strong>
-                        </span>
                     </span>
                 </h2>
             </div>
@@ -228,13 +222,12 @@
         <br>
         <br>
 
-        <div class="block">
+
+        <div class="block_flexible_stone">
             <div class="headings">
-                <h2 class="shadowsmall" style="text-align: center;">
-                    <span style="color: rgb(255, 91, 29);">
-                        <span style="font-size: 40px;">
-                            <strong>Каталог Гибкого камня</strong>
-                        </span>
+                <h2 class="shadowsmall">
+                    <span class="orange_heading">
+                        <strong>Каталог Гибкого камня</strong>
                     </span>
                 </h2>
             </div>
@@ -242,33 +235,29 @@
             <div class="assortment">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                        {% for example in list_images %}
+                        {% for example in list_images_flexible_stone %}
                         <div class="window">
                             <div class="card shadow-sm">
                                 <br>
                                 <a class="article number">
                                         <div class="article number">
-                                            <span style="font-size: 12px; margin-left: 5%;">
-                                                <span style="color: rgb(125, 125, 125);">
-                                                    <span style="font-family: &quot;Montserrat Light&quot;;">арт.{{ example[:-4] }}</span>
-                                                </span>
-                                            </span>
+                                            <span class="article">арт.{{ example[:-4] }}</span>
                                         </div>
                                     </a>
                                 <a class="img">
                                         <div id="carouselExampleIndicators" class="carousel slide">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active" align="center">
-                                                    <img align="center" width="215" height="135" src="static/img/catalog/{{ example }}">
+                                                    <img align="center" width="215" height="135" src="static/img/catalog_flexible_stone/{{ example }}">
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 <div class="card-body">
                                         <p style="text-align: left;">
-                                            <span style="font-size: 20px;">Размер - <strong>950х550мм</strong></span>
+                                            <span class="size_price">Размер - <strong>950х550мм</strong></span>
                                             <br>
-                                            <span style="font-size: 20px;">Цена м<sup>2</sup> - <strong>1150 руб</strong></span>
+                                            <span class="size_price">Цена м<sup>2</sup> - <strong>1150 руб</strong></span>
                                         </p>
                                     </div>
                                 </div>
@@ -277,7 +266,7 @@
                     </div>
                     <br>
                     <div class="d-grid gap-1">
-                        <a href="/catalog" type="button" class="btn btn-outline-warning">Просмотреть весь каталог</a>
+                        <a href="/catalog_flexible_stone" type="button" class="btn btn-outline-warning">Просмотреть весь каталог</a>
                     </div>
                 </div>
             </div>
@@ -286,26 +275,71 @@
         <br>
         <br>
 
-        <div class="contacts">
-            <div class="node node489 widget widget-text cr-text">
-                <div class="font-header xs-force-center textable">
-                    <h2 class="shadowsmall" style="text-align: center;">
-                        <span style="color: rgb(255, 91, 29);">
-                            <span style="font-size: 40px;">
-                                <strong>Контакты</strong>
-                            </span>
-                        </span>
-                    </h2>
-                </div>
+
+        <div class="block_thermal_panels">
+            <div class="headings">
+                <h2 class="shadowsmall">
+                    <span class="orange_heading">
+                        <strong>Каталог Термопанелей</strong>
+                    </span>
+                </h2>
             </div>
-            <div class="container">
-                <p>
-                    <h5>Наш адрес: </h5><p>г.Ульяновск, проезд Максимова, 39</p>
-                    <h5>Телефон: </h5><p>+7 (937) 037-96-98</p>
-                </p>
+
+            <div class="assortment">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                        {% for example in list_images_thermal_panels %}
+                        <div class="window">
+                            <div class="card shadow-sm">
+                                <br>
+                                <a class="article number">
+                                        <div class="article number">
+                                            <span class="article">арт.{{ example[:-4] }}</span>
+                                        </div>
+                                    </a>
+                                <a class="img">
+                                        <div id="carouselExampleIndicators" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active" align="center">
+                                                    <img align="center" width="215" height="135" src="static/img/catalog_thermal_panels/{{ example }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                <div class="card-body">
+                                        <p style="text-align: left;">
+                                            <span class="size_price">Размер - <strong>1000x600мм</strong></span>
+                                            <br>
+                                            <span class="size_price">Цена м<sup>2</sup> - <strong>1650 руб</strong></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                    <div class="d-grid gap-1">
+                        <a href="/catalog_thermal_panels" type="button" class="btn btn-outline-warning">Просмотреть весь каталог</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <br>
+        <br>
+
+
+        <div class="block_certificates">
+            <a href="/certificates">
+                <div class="headings">
+                    <h2 class="shadowsmall">
+                        <span class="orange_heading">
+                            <strong>Наши сертификаты</strong>
+                        </span>
+                    </h2>
+                </div>
+            </a>
+
+        </div>
 
 {% endblock %}

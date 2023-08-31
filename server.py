@@ -10,16 +10,29 @@ app.config['SECRET_KEY'] = 'first_project_by_KA'
 @app.route('/')
 @app.route('/main', methods=['GET'])
 def main():
-    css = url_for('static', filename='css/all.css')
-    list_images = ['kgs02.png', 'kgs06.png', 'kmk04.png', 'knt03.png']
-    return render_template('main.html', list_images=list_images)
+    list_images_flexible_stone = ['kgs02.png', 'kgs06.png', 'kmk04.png', 'knt03.png']
+    list_images_thermal_panels = ['tgs04.png', 'tmk02.png', 'tmk05.png', 'tnt01.png']
+    return render_template('main.html',
+                           list_images_flexible_stone=list_images_flexible_stone,
+                           list_images_thermal_panels=list_images_thermal_panels)
 
 
-@app.route('/catalog', methods=['GET'])
-def catalog():
-    css = url_for('static', filename='css/all.css')
-    list_images = [file for file in os.listdir('static/img/catalog')]
-    return render_template('catalog.html', list_images=list_images)
+@app.route('/catalog_flexible_stone', methods=['GET'])
+def catalog_flexible_stone():
+    list_images_flexible_stone = [file for file in os.listdir('static/img/catalog_flexible_stone')]
+    return render_template('catalog_flexible_stone.html', list_images_flexible_stone=list_images_flexible_stone)
+
+
+@app.route('/catalog_thermal_panels', methods=['GET'])
+def catalog_thermal_panels():
+    list_images_thermal_panels = [file for file in os.listdir('static/img/catalog_thermal_panels')]
+    return render_template('catalog_thermal_panels.html', list_images_thermal_panels=list_images_thermal_panels)
+
+
+@app.route('/certificates', methods=['GET'])
+def certificates():
+    list_certificates = [file for file in os.listdir('static/img/certificates')]
+    return render_template('certificates.html', list_certificates=list_certificates)
 
 
 if __name__ == '__main__':

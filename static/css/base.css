@@ -1,0 +1,19 @@
+.shadowsmall {
+    text-align: center;
+}
+
+.orange_heading {
+    color: rgb(255, 91, 29);
+    font-size: 40px;
+}
+
+.size_price {
+    font-size: 20px;
+}
+
+.article {
+    font-size: 12px;
+    margin-left: 5%;
+    color: rgb(125, 125, 125);
+    font-family: &quot;Montserrat Light&quot;;
+}
