@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="headings">
+            <h2 class="shadowsmall">
+                <span class="orange_heading">
+                        <strong>Каталог Термопанелей</strong>
+                </span>
+            </h2>
+        </div>
+
+        <div class="assortment">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                {% for example in list_images_thermal_panels %}
+                <div class="window">
+                    <div class="card shadow-sm">
+                        <br>
+                        <a class="article number">
+                            <div class="article number">
+                                <span class="article">арт.{{ example[:-4] }}</span>
+                            </div>
+                        </a>
+                        <a class="img">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" align="center">
+                                        <img align="center" width="215" height="135" src="static/img/catalog_thermal_panels/{{ example }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <p style="text-align: left;">
+                                <span class="size_price">Размер - <strong>1000х600мм</strong></span>
+                                <br>
+                                <span class="size_price">Цена м<sup>2</sup> - <strong>1650 руб</strong></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+
+{% endblock %}

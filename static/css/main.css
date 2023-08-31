@@ -1,0 +1,14 @@
+.bd-placeholder-img bd-placeholder-img-lg d-block w-100 {
+    max-width: 700px;
+}
+
+.video{
+    align: center;
+    relative: 16 / 9;
+}
+
+.video_item {
+    width: 80%;
+    max-width: 400px;
+    align: center;
+}
